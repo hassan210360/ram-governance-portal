@@ -6,14 +6,31 @@
 <script src='js/app.js'></script>
 </head>
 <body>
+
+
+ <div id="ramAuthModal" class="ram-modal">
+  <div class="ram-modal-box">
+    <h3>RAM Governance Portal</h3>
+    <p>Please enter access code</p>
+    <input type="password" id="ramCode" placeholder="Enter passcode">
+    <button onclick="checkRAMAccess()">Enter</button>
+    <p id="ramError"></p>
+  </div>
+</div>
+
 <header>RAM Enterprise Governance Knowledge Hub</header>
+
+
+
+
+
 <div class='container'>
 <div class='sidebar'><input id='search' class='search' onkeyup='searchPolicies()' placeholder='AI policy search'><div id='results'></div><h3 onclick="toggleGroup('group0')">1 RAM Administration and Management</h3><div id='group0'><a href='documents/01_governance.html'>01_GOVERNANCE</a><a href='documents/06_performance.html'>06_PERFORMANCE</a><a href='documents/10_management_administration.html'>10_MANAGEMENT & ADMINISTRATION</a></div><h3 onclick="toggleGroup('group1')">2 RAM Operations and Value Chain</h3><div id='group1'><a href='documents/02_investment.html'>02_INVESTMENT</a><a href='documents/03_leasing.html'>03_LEASING</a><a href='documents/04_facility_management.html'>04_FACILITY_MANAGEMENT</a><a href='documents/05_capex_projects.html'>05_CAPEX_PROJECTS</a><a href='documents/17_tenant_customer_service_framework.html'>17_Tenant_Customer_Service Framework</a></div><h3 onclick="toggleGroup('group2')">3 Shared Services</h3><div id='group2'><a href='documents/11_finance_accounting.html'>11_Finance_Accounting</a><a href='documents/12_treasury_cash_management.html'>12_Treasury_Cash_Management</a><a href='documents/13_procurement_commercial.html'>13_Procurement_Commercial</a><a href='documents/14_human_resources_interface.html'>14_Human_Resources_Interface</a><a href='documents/15_it_data_governance.html'>15_IT_Data_Governance</a><a href='documents/16_sales_marketing_commercialization.html'>16_Sales_Marketing_Commercialization</a></div><h3 onclick="toggleGroup('group3')">4 Governance Risk Compliance</h3><div id='group3'><a href='documents/07_risk_compliance.html'>07_RISK_COMPLIANCE</a><a href='documents/18_legal_contracts.html'>18_Legal_Contracts</a><a href='documents/19_internal_control_audit.html'>19_Internal_Control_Audit</a><a href='documents/20_ethics_compliance_conduct.html'>20_Ethics_Compliance_Conduct</a></div><h3 onclick="toggleGroup('group4')">5 Resilience and Strategy</h3><div id='group4'><a href='documents/08_master_data.html'>08_MASTER_DATA</a><a href='documents/09_ai_knowledge_hub.html'>09_AI_KNOWLEDGE_HUB</a><a href='documents/21_business_continuity_crisis.html'>21_Business_Continuity_Crisis</a></div><hr><a href='index.html'>Home</a></div>
 <main>
 
 <div class='section'>
 <h2>Enterprise Process Architecture</h2>
-<p>This portal organizes RAM governance policies into structured enterprise process architecture.</p>
+ <p>This portal organizes RAM governance policies into structured enterprise process architecture.</p>
 <svg width="600" height="200">
 <rect x="10" y="40" width="120" height="40" fill="#0b5ea6"/>
 <text x="20" y="65" fill="white">Governance</text>
@@ -37,5 +54,46 @@
 </main>
 </div>
 <footer>RAM Governance Platform</footer>
+
+<script>
+
+function checkRAMAccess(){
+
+let code=document.getElementById("ramCode").value;
+
+if(code==="RAMPP01"){
+
+sessionStorage.setItem("RAM_AUTH","true");
+
+document.getElementById("ramAuthModal").style.display="none";
+
+}
+
+else{
+
+document.getElementById("ramError").innerHTML="Invalid Code";
+
+}
+
+}
+
+window.onload=function(){
+
+if(sessionStorage.getItem("RAM_AUTH")!=="true"){
+
+document.getElementById("ramAuthModal").style.display="flex";
+
+}
+
+else{
+
+document.getElementById("ramAuthModal").style.display="none";
+
+}
+
+}
+
+</script>
+
 </body>
 </html>
