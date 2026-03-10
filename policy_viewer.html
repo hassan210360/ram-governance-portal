@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Policy Viewer</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header><h2>Policy Viewer</h2></header>
+
+<div class="main">
+
+<h3>Document Preview</h3>
+
+<p>
+<a id="pdfLink" target="_blank">Preview or Download PDF</a>
+</p>
+
+<p>
+<a id="wordLink" target="_blank">Open MS Word Version</a>
+</p>
+
+<iframe id="viewer" class="viewer"></iframe>
+
+</div>
+
+<script>
+const params=new URLSearchParams(window.location.search);
+const doc=params.get("doc")||"governance";
+document.getElementById("pdfLink").href="documents/pdf/"+doc+".pdf";
+document.getElementById("wordLink").href="documents/word/"+doc+".docx";
+document.getElementById("viewer").src="documents/pdf/"+doc+".pdf";
+</script>
+
+</body>
+</html>
