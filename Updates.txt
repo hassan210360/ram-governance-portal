@@ -1,0 +1,8 @@
+RAMPP01 By Hassan El-Meligy
+***************************
+Update and connect the missing procedures such as marketing and sales etc
+Update and test against errors or preview tools
+Update and test the search engine to produce strucured output
+Update and test the forms and how to produce all the word forms and any kind of forms that could be filld online then downloaded to WORD s
+- such as HTML forms that can be filled and saved into WORD or PDF and merged to an email and sent to a destination for approval 
+Update and create all detailed procedures 
