@@ -1,0 +1,24 @@
+{
+  "documents":[
+    {
+      "title":"Governance Policy",
+      "pdf":"documents/governance_policy.pdf",
+      "word":"documents/governance_policy.docx",
+      "process":"Governance"
+    },
+
+    {
+      "title":"Finance Procedure",
+      "pdf":"documents/finance_procedure.pdf",
+      "word":"documents/finance_procedure.docx",
+      "process":"Finance"
+    },
+
+    {
+      "title":"Procurement Requisition Form",
+      "pdf":"forms/purchase_requisition.pdf",
+      "word":"forms/purchase_requisition.docx",
+      "process":"Procurement"
+    }
+  ]
+}

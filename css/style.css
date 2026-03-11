@@ -1,3 +1,19 @@
+.ai-portal-button{
+display:inline-block;
+background:#0b5ea6;
+color:white;
+padding:12px 22px;
+font-size:16px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.ai-portal-button:hover{
+background:#094b82;
+transform:translateY(-1px);
+}
 
 body{font-family:Segoe UI,Arial;margin:0;background:#f5f7fb;color:#1f2d3d}
 header{background:#0b2a44;color:white;padding:12px 20px;display:flex;align-items:center}
