@@ -7,23 +7,25 @@ let results = docs.documents.filter(d =>
 (d.title && d.title.toLowerCase().includes(q)) ||
 (d.tags && d.tags.join(" ").toLowerCase().includes(q))
 )
-let html=""
-    if(results.length===0){
-        html="<p>No results found</p>"
-        }
-results.forEach(r=>{
-    html+=`
-        <div class="result">
-        <h3>${r.title}</h3>
-        <a href="${r.pdf}" target="_blank">📄 Open PDF</a>
-        <br>
-        <a href="${r.word}" target="_blank">📝 Word Version</a>
-        <br>
-        <h3>${r.title}</h3>
-        <a href="${r.word}" target="_blank">📄 Open WORD Version </a>
-    </div>
-`
+let html = ""
+
+if(results.length === 0){
+    html = "<p>No results found</p>"
+}
+results.forEach(r => {
+    html += `<div class="result">` 
+    html += `<h3>${r.title}</h3>`
+    if(r.pdf){
+        html += `<a href="${r.pdf}" target="_blank">📄 Open PDF</a><br>`
+    }
+    if(r.word){
+        html += `<a href="${r.word}" target="_blank">📝 Open Word Version</a>`
+    }
+    html += `</div>`
 })
+}
+               )
 document.getElementById("results").innerHTML=html
 
 }
+
