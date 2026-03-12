@@ -1,4 +1,3 @@
-
 async function searchPolicies(){
 let q=document.getElementById("search").value.toLowerCase();
 let data=await fetch("data/policies.json");
