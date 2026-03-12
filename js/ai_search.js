@@ -19,10 +19,11 @@ results.forEach(r=>{
         <br>
         <a href="${r.word}" target="_blank">📝 Word Version</a>
         <br>
-    //    \' // // ***// ddd
+        <h3>${r.title}</h3>
         <a href="${r.word}" target="_blank">📄 Open WORD Version </a>
     </div>
 `
 })
 document.getElementById("results").innerHTML=html
+
 }
