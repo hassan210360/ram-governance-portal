@@ -12,20 +12,22 @@ let html = ""
 if(results.length === 0){
     html = "<p>No results found</p>"
 }
+
 results.forEach(r => {
-    html += `<div class="result">` 
+
+    html += `<div class="result">`
+    
     html += `<h3>${r.title}</h3>`
+
     if(r.pdf){
         html += `<a href="${r.pdf}" target="_blank">📄 Open PDF</a><br>`
     }
+
     if(r.word){
         html += `<a href="${r.word}" target="_blank">📝 Open Word Version</a>`
     }
+
     html += `</div>`
 })
-}
-               )
 document.getElementById("results").innerHTML=html
-
 }
-
