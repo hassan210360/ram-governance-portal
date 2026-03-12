@@ -8,17 +8,17 @@ let results = docs.documents.filter(d =>
 (d.tags && d.tags.join(" ").toLowerCase().includes(q))
 )
 let html=""
-if(results.length===0){
-html="<p>No results found</p>"
-}
+    if(results.length===0){
+        html="<p>No results found</p>"
+        }
 results.forEach(r=>{
-html+=`
-<div class="result">
-<h3>${r.title}</h3>
-<a href="${r.pdf}" target="_blank">📄 Open PDF</a>
-<br>
-<a href="${r.word}" target="_blank">📝 Word Version</a>
-</div>
+    html+=`
+        <div class="result">
+        <h3>${r.title}</h3>
+        <a href="${r.pdf}" target="_blank">📄 Open PDF</a>
+        <br>
+        <a href="${r.word}" target="_blank">📝 Word Version</a>
+    </div>
 `
 })
 document.getElementById("results").innerHTML=html
