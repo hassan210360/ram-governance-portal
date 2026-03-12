@@ -1,58 +1,181 @@
 [
-  {
-    "title": "Governance",
-    "url": "documents/governance.html"
-  },
-  {
-    "title": "Investment Lifecycle",
-    "url": "documents/investment.html"
-  },
-  {
-    "title": "Leasing",
-    "url": "documents/leasing.html"
-  },
-  {
-    "title": "Facility Management",
-    "url": "documents/facility.html"
-  },
-  {
-    "title": "CapEx Projects",
-    "url": "documents/capex.html"
-  },
-  {
-    "title": "Finance & Accounting",
-    "url": "documents/finance.html"
-  },
-  {
-    "title": "Treasury",
-    "url": "documents/treasury.html"
-  },
-  {
-    "title": "Procurement",
-    "url": "documents/procurement.html"
-  },
-  {
-    "title": "Human Resources",
-    "url": "documents/hr.html"
-  },
-  {
-    "title": "IT Governance",
-    "url": "documents/it.html"
-  },
-  {
-    "title": "Legal",
-    "url": "documents/legal.html"
-  },
-  {
-    "title": "Internal Audit",
-    "url": "documents/audit.html"
-  },
-  {
-    "title": "Ethics",
-    "url": "documents/ethics.html"
-  },
-  {
-    "title": "Business Continuity",
-    "url": "documents/bcm.html"
-  }
+{
+"title":"01 Governance Framework",
+"url":"documents/governance.html",
+"pdf":"documents/pdf/01_Governance_Framework.pdf",
+"word":"documents/word/01_Governance_Framework.docx",
+"text":"corporate governance board oversight policies strategic governance",
+"tags":["governance","board","policy"]
+},
+
+{
+"title":"02 Investment Lifecycle",
+"url":"documents/investment.html",
+"pdf":"documents/pdf/02_Investment_Lifecycle.pdf",
+"word":"documents/word/02_Investment_Lifecycle.docx",
+"text":"investment lifecycle project evaluation capital investment approval",
+"tags":["investment","capital","projects"]
+},
+
+{
+"title":"03 Leasing Management",
+"url":"documents/leasing.html",
+"pdf":"documents/pdf/03_Leasing_Management.pdf",
+"word":"documents/word/03_Leasing_Management.docx",
+"text":"leasing tenant contracts rental agreements property leasing",
+"tags":["leasing","tenant","contracts"]
+},
+
+{
+"title":"04 Facility Management",
+"url":"documents/facility.html",
+"pdf":"documents/pdf/04_Facility_Management.pdf",
+"word":"documents/word/04_Facility_Management.docx",
+"text":"facility operations maintenance building services management",
+"tags":["facility","maintenance"]
+},
+
+{
+"title":"05 CapEx Projects",
+"url":"documents/capex.html",
+"pdf":"documents/pdf/05_CapEx_Projects.pdf",
+"word":"documents/word/05_CapEx_Projects.docx",
+"text":"capital expenditure project planning engineering procurement construction",
+"tags":["capex","projects"]
+},
+
+{
+"title":"06 Performance Management",
+"url":"documents/performance.html",
+"pdf":"documents/pdf/06_Performance.pdf",
+"word":"documents/word/06_Performance.docx",
+"text":"performance management kpi monitoring organizational performance",
+"tags":["performance","kpi"]
+},
+
+{
+"title":"07 Risk & Compliance Framework",
+"url":"documents/risk_compliance.html",
+"pdf":"documents/pdf/07_Risk_Compliance.pdf",
+"word":"documents/word/07_Risk_Compliance.docx",
+"text":"risk management compliance governance regulatory risk register internal controls",
+"tags":["risk","compliance"]
+},
+
+{
+"title":"08 Master Data Governance",
+"url":"documents/master_data.html",
+"pdf":"documents/pdf/08_Master_Data.pdf",
+"word":"documents/word/08_Master_Data.docx",
+"text":"data governance master data management data quality data standards",
+"tags":["data","governance"]
+},
+
+{
+"title":"09 AI Knowledge Hub",
+"url":"documents/ai_knowledge_hub.html",
+"pdf":"documents/pdf/09_AI_Knowledge_HUB.pdf",
+"word":"documents/word/09_AI_Knowledge_Hub.docx",
+"text":"artificial intelligence governance automation ai tools digital transformation",
+"tags":["ai","automation"]
+},
+
+{
+"title":"10 Finance & Accounting",
+"url":"documents/finance.html",
+"pdf":"documents/pdf/11_Finance_Accounting.pdf",
+"word":"documents/word/11_Finance_Accounting.docx",
+"text":"finance accounting budgeting financial statements reporting",
+"tags":["finance","accounting"]
+},
+
+{
+"title":"11 Treasury & Cash Management",
+"url":"documents/treasury.html",
+"pdf":"documents/pdf/12_Treasury_Cash_Management.pdf",
+"word":"documents/word/12_Treasury_Cash_Management.docx",
+"text":"treasury cash flow liquidity banking payments",
+"tags":["treasury","cash"]
+},
+
+{
+"title":"12 Procurement & Commercial",
+"url":"documents/procurement.html",
+"pdf":"documents/pdf/13_Procurement_Commercial.pdf",
+"word":"documents/word/13_Procurement_Commercial.docx",
+"text":"procurement purchasing supplier management contracting sourcing",
+"tags":["procurement","suppliers"]
+},
+
+{
+"title":"13 Human Resources Interface",
+"url":"documents/hr.html",
+"pdf":"documents/pdf/14_Human_Resources_Interface.pdf",
+"word":"documents/word/14_Human_Resources_Interface.docx",
+"text":"human resources recruitment employee management training",
+"tags":["hr","people"]
+},
+
+{
+"title":"14 IT & Data Governance",
+"url":"documents/it.html",
+"pdf":"documents/pdf/15_IT_Data_Governance.pdf",
+"word":"documents/word/15_IT_Data_Governance.docx",
+"text":"information technology data governance systems security",
+"tags":["it","technology"]
+},
+
+{
+"title":"15 Sales & Marketing Commercialization",
+"url":"documents/sales_marketing.html",
+"pdf":"documents/pdf/16_Sales_Marketing_Commercialization.pdf",
+"word":"documents/word/16_Sales_Marketing_Commercialization.docx",
+"text":"sales marketing commercialization campaigns pipeline revenue growth",
+"tags":["sales","marketing"]
+},
+
+{
+"title":"16 Tenant & Customer Service",
+"url":"documents/customer_service.html",
+"pdf":"documents/pdf/17_Tenant_Customer_Service_Framework.pdf",
+"word":"documents/word/17_Tenant_Customer_Service_Framework.docx",
+"text":"tenant customer service complaints service requests satisfaction",
+"tags":["customer","service"]
+},
+
+{
+"title":"17 Legal & Contracts",
+"url":"documents/legal.html",
+"pdf":"documents/pdf/18_Legal_Contracts.pdf",
+"word":"documents/word/18_Legal_Contracts.docx",
+"text":"legal contracts agreements compliance legal review",
+"tags":["legal","contracts"]
+},
+
+{
+"title":"18 Internal Control & Audit",
+"url":"documents/audit.html",
+"pdf":"documents/pdf/19_Internal_Control_Audit.pdf",
+"word":"documents/word/19_Internal_Control_Audit.docx",
+"text":"internal audit controls governance assurance",
+"tags":["audit","control"]
+},
+
+{
+"title":"19 Ethics & Compliance",
+"url":"documents/ethics.html",
+"pdf":"documents/pdf/20_Ethics_Compliance_Conduct.pdf",
+"word":"documents/word/20_Ethics_Compliance_Conduct.docx",
+"text":"ethics compliance conduct code integrity governance",
+"tags":["ethics","compliance"]
+},
+
+{
+"title":"20 Business Continuity & Crisis",
+"url":"documents/crisis.html",
+"pdf":"documents/pdf/21_Business_Continuity_Crisis.pdf",
+"word":"documents/word/21_Business_Continuity_Crisis.docx",
+"text":"business continuity crisis management disaster recovery resilience",
+"tags":["continuity","crisis"]
+}
 ]

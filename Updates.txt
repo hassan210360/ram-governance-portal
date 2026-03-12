@@ -1,12 +1,19 @@
 RAMPP01 By Hassan El-Meligy
 ***************************
-Update first page and make it all equal 
-Update version control suggested by ChatGPT
+Add quick guide
+Add long guide 
+Update security code in all html files or python ? and if not use it will reset after 2 hours or date change / or upon sittings
 
-Update and connect the missing procedures such as marketing and sales etc
-Update and test against errors or preview tools
+Update first page and make it all equal (The sidebar is not correct in all pages) - make it equal but check all files first
+Add a link to preview all files in a good format 
+Add advanced search to search by criteria and to sarch also inside the files and HTML
 Update and test the search engine to produce strucured output
-Update and test the forms and how to produce all the word forms and any kind of forms that could be filld online then downloaded to WORD s
+
+**Update version control suggested by ChatGPT
+**Update and connect the missing procedures such as marketing and sales etc
+Update and test against errors or preview tools
+
+Update and test the forms/templates  and how to produce all the word forms and any kind of forms that could be filld online then downloaded to WORD s
 - such as HTML forms that can be filled and saved into WORD or PDF and merged to an email and sent to a destination for approval 
 Update and create all detailed procedures 
 Create a direct link to previouse list of files / docs / form in forlders
@@ -16,12 +23,12 @@ Check per each document
 Document Hierarchy
 Level 1 – Policy
 Level 2 – Procedure
-Level 3 – Work Instruction
-Level 4 – Forms / Templates
+Level 3 – Work Instruction ** work on an example of work instruction to be inside the Docs
+Level 4 – Forms / Templates ** to be inside the docs, then outside the docs (at least make an example)
 
 Last is a hypertexted wiki
 
-Short desc
+== Short desc ==
 The P&P is aligned with the group requirement based on the strategy articulated
 It is also aligned with ISO 9001, 37000, 37301, COSO and REAM, REET check all relevent standards 
 WIth a space for improvment 

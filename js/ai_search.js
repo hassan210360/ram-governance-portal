@@ -1,33 +1,40 @@
-async function searchAI(){
-let q=document.getElementById("query").value.toLowerCase()
-let data=await fetch("data/knowledge_index.json")
-let docs=await data.json()
-let results = docs.documents.filter(d =>
+async function searchPolicies(){
+
+let q = document.getElementById("search").value.trim().toLowerCase();
+
+let data = await fetch("data/search_index.json");
+let index = await data.json();
+
+let results = index.filter(d =>
 (d.text && d.text.toLowerCase().includes(q)) ||
 (d.title && d.title.toLowerCase().includes(q)) ||
 (d.tags && d.tags.join(" ").toLowerCase().includes(q))
-)
-let html = ""
+);
 
-if(results.length === 0){
-    html = "<p>No results found</p>"
+let html="";
+
+if(results.length===0){
+html="<p>No results found</p>";
 }
 
-results.forEach(r => {
+results.forEach(d=>{
 
-    html += `<div class="result">`
-    
-    html += `<h3>${r.title}</h3>`
+html+=`
+<div class="result">
 
-    if(r.pdf){
-        html += `<a href="${r.pdf}" target="_blank">📄 Open PDF</a><br>`
-    }
+<h3>${d.title}</h3>
 
-    if(r.word){
-        html += `<a href="${r.word}" target="_blank">📝 Open Word Version</a>`
-    }
+<a href="${d.url}">Open Policy Page</a><br>
 
-    html += `</div>`
+<a href="${d.pdf}" target="_blank">📄 PDF</a><br>
+
+<a href="${d.word}" target="_blank">📝 Word</a>
+
+</div>
+`
+
 })
-document.getElementById("results").innerHTML=html
+
+document.getElementById("results").innerHTML=html;
+
 }
