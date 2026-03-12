@@ -18,6 +18,9 @@ results.forEach(r=>{
         <a href="${r.pdf}" target="_blank">📄 Open PDF</a>
         <br>
         <a href="${r.word}" target="_blank">📝 Word Version</a>
+        <br>
+    //    \' // // ***// ddd
+        <a href="${r.word}" target="_blank">📄 Open WORD Version </a>
     </div>
 `
 })
