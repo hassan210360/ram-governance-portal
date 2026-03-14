@@ -1,6 +1,17 @@
 
 <!DOCTYPE html>
 <html>
+    <!-- Menu -->
+    <script> 
+        document.addEventListener("DOMContentLoaded", function(){
+        fetch("..\components/menu.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("menu").innerHTML = data;
+        });
+        });
+    </script>
+    <!-- M -->
 <head>
 <title>Treasury and Cash Management</title>
 <link rel="stylesheet" href="../css/style.css">
@@ -13,114 +24,66 @@
 <h2>Treasury</h2>
 </header>
 
-<div class="container">
+<!-- Call the menu -->
+ <div class="container"> 
+    <div id="menu"></div>
+    <!--  -->
 
-<div class="sidebar">
+    <main>
+        <div class="section">
+            <h2>Treasury and Cash Management</h2>
+                <a href="../index.html" title="Go back to the homepage" style="color:rgb(45, 4, 148)">HomePage</a>  
+                <p><b>Open Policy Document:</b> <a href="../documents/pdf/12_Treasury.pdf" target="_blank" >Open PDF Version</a>
+                <b>Full Policy Document:</b> <a href="../documents/word/12_Treasury.docx">Download Word Version</a></p>
+            <!-- <p><b>Full Policy Document:</b> <a href="../documents/word/12_Treasury.docx">Download Word Version</a></p> -->
+        </div>
 
-<ul class="tree">
-<li><b>1 RAM Administration & Management</b>
-<ul>
-<li><a href="../documents/governance.html">Governance</a></li>
-<li><a href="../documents/management.html">Management & Administration</a></li>
-<li><a href="../documents/performance.html">Performance Management</a></li>
-</ul>
-</li>
+        <div class="section">
+            <h3>SIPOC</h3>
+            <table>
+            <tr><th>Supplier</th><th>Input</th><th>Process</th><th>Output</th><th>Customer</th></tr>
+            <tr><td>Internal Teams</td><td>Operational Data</td><td>Treasury Process</td><td>Reports</td><td>Management</td></tr>
+            </table>
+        </div>
 
-<li><b>2 RAM Operations & Value Chain</b>
-<ul>
-<li><a href="../documents/investment.html">Investment Lifecycle</a></li>
-<li><a href="../documents/leasing.html">Leasing</a></li>
-<li><a href="../documents/facility.html">Facility Management</a></li>
-<li><a href="../documents/capex.html">CapEx Projects</a></li>
-</ul>
-</li>
+        <div class="section">
+            <h3>BPMN Workflow</h3>
+            <p>Process initiation → Review → Approval → Execution → Monitoring</p>
+        </div>
 
-<li><b>3 Shared Services</b>
-<ul>
-<li><a href="../documents/finance.html">Finance & Accounting</a></li>
-<li><a href="../documents/treasury.html">Treasury</a></li>
-<li><a href="../documents/procurement.html">Procurement</a></li>
-<li><a href="../documents/hr.html">Human Resources</a></li>
-<li><a href="../documents/it.html">IT & Data Governance</a></li>
-</ul>
-</li>
+        <div class="section">
+            <h3>RACI Matrix</h3>
+            <table>
+            <tr><th>Activity</th><th>Responsible</th><th>Accountable</th><th>Consulted</th><th>Informed</th></tr>
+            <tr><td>Main Process</td><td>Process Owner</td><td>Executive</td><td>Departments</td><td>Management</td></tr>
+            </table>
+        </div>
 
-<li><b>4 Others</b>
-<ul>
-<li><a href="../documents/legal.html">Legal & Contracts</a></li>
-<li><a href="../documents/audit.html">Internal Audit</a></li>
-<li><a href="../documents/ethics.html">Ethics & Compliance</a></li>
-<li><a href="../documents/bcm.html">Business Continuity</a></li>
-</ul>
-</li>
+        <div class="section">
+            <h3>KPIs</h3>
+            <table>
+            <tr><th>KPI</th><th>Target</th></tr>
+            <tr><td>Process Completion</td><td>100%</td></tr>
+            <tr><td>Compliance Rate</td><td>>95%</td></tr>
+            </table>
+        </div>
 
-<li><b>Resources</b>
-<ul>
-<li><a href="../forms/templates.html">Forms & Templates</a></li>
-<li><a href="../templates/glossary.html">Glossary</a></li>
-<li><a href="../index.html">Home</a></li>
-</ul>
-</li>
-</ul>
+        <div class="section">
+            <h3>Templates</h3>
+            <p>See related templates in <a href="../forms/templates.html">Forms & Templates</a></p>
+        </div>
 
-</div>
+        <div class="section">
+            <h3>Audit Checklist</h3>
+            <table>
+            <tr><th>Control</th><th>Status</th></tr>
+            <tr><td>Policy Approved</td><td>✔</td></tr>
+            <tr><td>Process Documented</td><td>✔</td></tr>
+            <tr><td>Templates Available</td><td>✔</td></tr>
+            </table>
+        </div>
 
-<main>
-
-<div class="section">
-<h2>Treasury and Cash Management</h2>
-    <a href="../index.html" title="Go back to the homepage" style="color:rgb(45, 4, 148)">HomePage</a>  
-    <p><b>Open Policy Document:</b> <a href="../documents/pdf/12_Treasury.pdf" target="_blank" >Open PDF Version</a>
-    <b>Full Policy Document:</b> <a href="../documents/word/12_Treasury.docx">Download Word Version</a></p>
-<!-- <p><b>Full Policy Document:</b> <a href="../documents/word/12_Treasury.docx">Download Word Version</a></p> -->
-</div>
-
-<div class="section">
-<h3>SIPOC</h3>
-<table>
-<tr><th>Supplier</th><th>Input</th><th>Process</th><th>Output</th><th>Customer</th></tr>
-<tr><td>Internal Teams</td><td>Operational Data</td><td>Treasury Process</td><td>Reports</td><td>Management</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h3>BPMN Workflow</h3>
-<p>Process initiation → Review → Approval → Execution → Monitoring</p>
-</div>
-
-<div class="section">
-<h3>RACI Matrix</h3>
-<table>
-<tr><th>Activity</th><th>Responsible</th><th>Accountable</th><th>Consulted</th><th>Informed</th></tr>
-<tr><td>Main Process</td><td>Process Owner</td><td>Executive</td><td>Departments</td><td>Management</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h3>KPIs</h3>
-<table>
-<tr><th>KPI</th><th>Target</th></tr>
-<tr><td>Process Completion</td><td>100%</td></tr>
-<tr><td>Compliance Rate</td><td>>95%</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h3>Templates</h3>
-<p>See related templates in <a href="../forms/templates.html">Forms & Templates</a></p>
-</div>
-
-<div class="section">
-<h3>Audit Checklist</h3>
-<table>
-<tr><th>Control</th><th>Status</th></tr>
-<tr><td>Policy Approved</td><td>✔</td></tr>
-<tr><td>Process Documented</td><td>✔</td></tr>
-<tr><td>Templates Available</td><td>✔</td></tr>
-</table>
-</div>
-
-</main>
+    </main>
 </div>
 
 <footer>
