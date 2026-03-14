@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
-
+<!-- Menu -->
+    <script> 
+        document.addEventListener("DOMContentLoaded", function(){
+        fetch("../components/menu.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("menu").innerHTML = data;
+        });
+        });
+    </script>
+    <!-- M -->
 <head>
 <title>AI Knowledge Hub</title>
 <link rel="stylesheet" href="../css/style.css">
@@ -16,19 +26,11 @@
 
 <div class="container">
 
-<div class="sidebar">
-
-<ul class="tree">
-
-<li><b>Administration & Governance</b>
-<ul>
-<li><a href="risk_compliance.html">Risk & Compliance</a></li>
-<li><a href="master_data.html">Master Data Governance</a></li>
-<li><b>AI Knowledge Hub</b></li>
-</ul>
-</li>
-
-</ul>
+  <!-- Call the menu -->
+ <div class="container"> 
+    <div id="menu"></div>
+ 
+<!-- End call the menu -->
 
 </div>
 
