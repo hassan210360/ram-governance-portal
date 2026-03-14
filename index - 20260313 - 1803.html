@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>RAM Enterprise Knowledge Hub</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/search.js"></script>
+<script src="js/auth.js"></script>
+</head>
+<link rel="icon" type="image/x-icon" href="1.ico">
+<body>
+   <!-- PASSCODE MODAL -->
+<div id="authModal" class="modal">
+    <div class="modal-box">
+        <h2>⚙ RAM Governance Portal 260312-0215</h2>
+        <p>Please enter access code</p>
+        <input type="password" id="code" placeholder="Access code">
+        <button onclick="checkCode()">Enter</button>
+        <p id="error"></p>
+    </div>
+</div>
+<!-- END PASSCODE  -->
+
+<header>
+<img src="assets/logo.png">
+<h2>⚙ RAM Policies & Procedures Knowledge Hub 260312-0215</h2>
+</header>
+<!-- Main menu starts  -->
+<div class="container">
+
+<div class="sidebar">
+<input class="searchBox" id="search" onkeyup="searchPolicies()" placeholder="Search policies">
+<div id="results"></div>
+
+<ul class="tree">
+<li><b>- RAM P&P Guides & About </b>
+    <ul>
+        <li><a href="guide/RAM_PP_Short_Guide.html">Quick Guide</a></li>
+        <li><a href="guide/RAM_PP_Short_Guide.html">Detailed Guide</a></li>
+        <li><a href="guide/RAM_PP_Short_Guide.html">KW Portal Notes</a></li>
+    </ul>
+<li><b>1 RAM Admin & Management</b>
+    <ul>
+        <li><a href="documents/governance.html">Governance</a></li>
+        <li><a href="documents/management.html">Management & Admin.</a></li>
+        <li><a href="documents/performance.html">Performance Management</a></li>
+    </ul>
+</li>
+
+<li><b>2 RAM Operations & Value Chain</b>
+    <ul>
+        <li><a href="documents/sales_marketing.html">Sales & Marketing</a></li>
+        <li><a href="documents/investment.html">Investment Lifecycle</a></li>
+        <li><a href="documents/leasing.html">Leasing</a></li>
+        <li><a href="documents/customer_service.html">Tenant & Customer Services</a></li>
+        <li><a href="documents/facility.html">Facility Management</a></li>
+        <li><a href="documents/capex.html">CapEx Projects</a></li>
+    </ul>
+</li>
+
+<li><b>3 Shared Services</b>
+    <ul>
+        <li><a href="documents/finance.html">Finance & Accounting</a></li>
+        <li><a href="documents/treasury.html">Treasury and Cash Management</a></li>
+        <li><a href="documents/procurement.html">Procurement</a></li>
+        <li><a href="documents/hr.html">Human Resources & SS</a></li>
+        <li><a href="documents/it.html">IT & Data Governance</a></li>
+    </ul>
+</li>
+
+<li><b>4 Others</b>
+    <ul>
+        <li><a href="documents/legal.html">Legal & Contracts</a></li>
+        <li><a href="documents/audit.html">Internal Audit</a></li>
+        <li><a href="documents/ethics.html">Ethics & Compliance</a></li>
+        <li><a href="documents/bcm.html">Business Continuity</a></li>
+
+        <li><a href="documents/risk_compliance.html">Risk & Compliance</a></li>
+        <li><a href="documents/ai_knowledge_hub.html">Knowlodege Hub</a></li>
+    </ul>
+</li>
+
+<li><b>Resources</b>
+    <ul>
+        <li><a href="forms/templates.html">Forms & Templates</a></li>
+        <li><a href="templates/glossary.html">Glossary & Abb.</a></li>
+        <li><a href="documents/master_data.html">Master Data.</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</li>
+</ul>
+
+</div>
+<!-- // Main menu end  -->
+<main>
+
+<h2>RAM Enterprise Knowledge Portal</h2>
+
+<div class="diagram">
+<h3>Enterprise Process Architecture</h3>
+
+<svg width="600" height="200">
+<rect x="10" y="20" width="150" height="40" fill="#0b5ea6"/>
+<text x="20" y="45" fill="white">Governance</text>
+
+<rect x="170" y="20" width="150" height="40" fill="#0b5ea6"/>
+<text x="180" y="45" fill="white">Investment</text>
+
+<rect x="330" y="20" width="150" height="40" fill="#0b5ea6"/>
+<text x="340" y="45" fill="white">Operations</text>
+
+<rect x="490" y="20" width="150" height="40" fill="#0b5ea6"/>
+<text x="500" y="45" fill="white">Shared Services</text>
+</svg>
+
+</div>
+
+<p>This portal provides a wiki-style knowledge hub for RAM policies and procedures including governance, operational processes, shared services and compliance frameworks.</p>
+<!-- <a href="ai_search.html">RAM AI Advanced Knowledge Search</a> -->
+<!-- <a href="ai_search.html" class="ai-button">RAM AI Advanced Knowledge Search</a> -->
+
+<a href="ai_search.html" class="ai-portal-button">
+>> 📚 RAM AI Advanced Knowledge Search
+</a>
+
+</main>
+</div>
+
+<footer>
+<a href="index.html" style="color:white">🏠 Home</a>
+</footer>
+
+</body>
+</html>
