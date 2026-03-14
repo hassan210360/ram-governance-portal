@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
-
+<!-- Menu -->
+    <script> 
+        document.addEventListener("DOMContentLoaded", function(){
+        fetch("components/menu.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("menu").innerHTML = data;
+        });
+        });
+    </script>
+    <!-- M -->
 <head>
 <title>Sales & Marketing Commercialization</title>
 <link rel="stylesheet" href="../css/style.css">
@@ -16,42 +26,11 @@
 
 <div class="container">
 
-<div class="sidebar">
-
-<ul class="tree">
-
-<li><b>1 RAM Administration & Management</b>
-<ul>
-<li><a href="governance.html">Governance</a></li>
-<li><a href="management.html">Management & Administration</a></li>
-<li><a href="performance.html">Performance</a></li>
-</ul>
-</li>
-
-<li><b>2 RAM Operations & Value Chain</b>
-<ul>
-<li><a href="investment.html">Investment Lifecycle</a></li>
-<li><a href="leasing.html">Leasing</a></li>
-<li><a href="facility.html">Facility Management</a></li>
-<li><a href="capex.html">CapEx Projects</a></li>
-</ul>
-</li>
-
-<li><b>3 Shared Services</b>
-<ul>
-<li><a href="finance.html">Finance</a></li>
-<li><a href="treasury.html">Treasury</a></li>
-<li><a href="procurement.html">Procurement</a></li>
-<li><a href="hr.html">Human Resources</a></li>
-<li><a href="it.html">IT & Data Governance</a></li>
-<li><b>Sales & Marketing</b></li>
-<li><a href="customer_service.html">Tenant Customer Service</a></li>
-</ul>
-</li>
-
-</ul>
-
-</div>
+<  <!-- Call the menu -->
+ <div class="container"> 
+    <div id="menu"></div>
+ 
+<!-- End call the menu -->
 
 <div class="content">
 
