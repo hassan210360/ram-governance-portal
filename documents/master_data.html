@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+    <!-- Menu -->
+    <script> 
+        document.addEventListener("DOMContentLoaded", function(){
+        fetch("components/menu.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("menu").innerHTML = data;
+        });
+        });
+    </script>
+    <!-- M -->
 
 <head>
 <title>Master Data Governance</title>
@@ -14,29 +25,18 @@
 <h2>Master Data Governance</h2>
 </header>
 
-<div class="container">
 
-<div class="sidebar">
-
-<ul class="tree">
-
-<li><b>Administration & Governance</b>
-<ul>
-<li><a href="risk_compliance.html">Risk & Compliance</a></li>
-<li><b>Master Data Governance</b></li>
-<li><a href="ai_knowledge_hub.html">AI Knowledge Hub</a></li>
-</ul>
-</li>
-
-</ul>
-
-</div>
+<!-- <div class="container"> -->
+  <!-- Call the menu -->
+ <div class="container"> 
+    <div id="menu"></div>
+ <!-- End call the menu -->
 
 <div class="content">
 
 <h1>08 Master Data Governance</h1>
 
-<h2>Level 1 – Policy</h2>
+<h2>Level 1 - Policy</h2>
 
 <p class="policy-text">
 Master Data Governance ensures the accuracy, consistency, and integrity of
@@ -48,7 +48,7 @@ All master data must be centrally managed and maintained in accordance with
 data governance standards.
 </p>
 
-<h2>Level 2 – Procedures</h2>
+<h2>Level 2 - Procedures</h2>
 
 <ul>
 <li>Data Creation & Registration</li>
@@ -58,7 +58,7 @@ data governance standards.
 <li>Data Access Control</li>
 </ul>
 
-<h2>Level 3 – Work Instructions</h2>
+<h2>Level 3 - Work Instructions</h2>
 
 <ol>
 <li>Submit master data request</li>
@@ -68,7 +68,7 @@ data governance standards.
 <li>Perform periodic quality review</li>
 </ol>
 
-<h2>Level 4 – Forms & Templates</h2>
+<h2>Level 4 - Forms & Templates</h2>
 
 <ul>
 <li><a href="../templates/master_data_request.xlsx">Master Data Request Form</a></li>

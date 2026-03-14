@@ -1,6 +1,17 @@
 
 <!DOCTYPE html>
 <html>
+    <!-- Menu -->
+    <script> 
+        document.addEventListener("DOMContentLoaded", function(){
+        fetch("components/menu.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("menu").innerHTML = data;
+        });
+        });
+    </script>
+    <!-- M -->
 <head>
 <title>Investment</title>
 <link rel="stylesheet" href="../css/style.css">
@@ -13,57 +24,12 @@
 <h2>Investment</h2>
 </header>
 
-<div class="container">
+<!-- <div class="container"> -->
+  <!-- Call the menu -->
+ <div class="container"> 
+    <div id="menu"></div>
+ <!-- End call the menu -->
 
-<div class="sidebar">
-
-<ul class="tree">
-<li><b>1 RAM Administration & Management</b>
-<ul>
-<li><a href="../documents/governance.html">Governance</a></li>
-<li><a href="../documents/management.html">Management & Administration</a></li>
-<li><a href="../documents/performance.html">Performance Management</a></li>
-</ul>
-</li>
-
-<li><b>2 RAM Operations & Value Chain</b>
-<ul>
-<li><a href="../documents/investment.html">Investment Lifecycle</a></li>
-<li><a href="../documents/leasing.html">Leasing</a></li>
-<li><a href="../documents/facility.html">Facility Management</a></li>
-<li><a href="../documents/capex.html">CapEx Projects</a></li>
-</ul>
-</li>
-
-<li><b>3 Shared Services</b>
-<ul>
-<li><a href="../documents/finance.html">Finance & Accounting</a></li>
-<li><a href="../documents/treasury.html">Treasury</a></li>
-<li><a href="../documents/procurement.html">Procurement</a></li>
-<li><a href="../documents/hr.html">Human Resources</a></li>
-<li><a href="../documents/it.html">IT & Data Governance</a></li>
-</ul>
-</li>
-
-<li><b>4 Others</b>
-<ul>
-<li><a href="../documents/legal.html">Legal & Contracts</a></li>
-<li><a href="../documents/audit.html">Internal Audit</a></li>
-<li><a href="../documents/ethics.html">Ethics & Compliance</a></li>
-<li><a href="../documents/bcm.html">Business Continuity</a></li>
-</ul>
-</li>
-
-<li><b>Resources</b>
-<ul>
-<li><a href="../forms/templates.html">Forms & Templates</a></li>
-<li><a href="../templates/glossary.html">Glossary</a></li>
-<li><a href="../index.html">Home</a></li>
-</ul>
-</li>
-</ul>
-
-</div>
 
 <main>
 
