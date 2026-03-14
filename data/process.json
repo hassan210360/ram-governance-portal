@@ -1,0 +1,9 @@
+{
+ "steps":[
+  "Start Request",
+  "Manager Approval",
+  "Finance Validation",
+  "Procurement Processing",
+  "Close Request"
+ ]
+}

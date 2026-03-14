@@ -1,0 +1,21 @@
+function ask(){
+
+let q=document.getElementById("question").value.toLowerCase();
+
+let answer="Please consult the relevant policy.";
+
+if(q.includes("procurement")){
+
+answer="Procurement must follow the Procurement Policy and approval limits under the Delegation of Authority.";
+
+}
+
+if(q.includes("finance")){
+
+answer="Finance procedures follow the Finance Policy and accounting controls.";
+
+}
+
+document.getElementById("answer").innerHTML=answer;
+
+}

@@ -1,0 +1,13 @@
+[
+ {
+  "title":"Finance Policy",
+  "file":"../policies/finance_policy.pdf",
+  "text":"Defines financial governance approvals accounting procedures and internal financial controls."
+ },
+
+ {
+  "title":"HR Policy",
+  "file":"../policies/hr_policy.pdf",
+  "text":"Human resources policy covering recruitment training employee development and governance."
+ }
+]

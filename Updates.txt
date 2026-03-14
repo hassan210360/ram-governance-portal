@@ -1,6 +1,7 @@
 RAMPP01 By Hassan El-Meligy
 ***************************
-Add quick guide
+Add one source of menu 
+*Add quick guide (Done)
 Add long guide 
 Update security code in all html files or python ? and if not use it will reset after 2 hours or date change / or upon sittings
 
