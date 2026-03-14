@@ -1,0 +1,68 @@
+<!-- ====================================== -->
+<!-- RAM Knolowde Portal - Hassan El-Meligy -->
+<!-- Error control
+<!-- h.meligy@ieee.org                      -->
+<!-- ====================================== -->
+<!DOCTYPE html>
+<html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        let url = window.location.href;
+
+        document.getElementById("errorUrl").innerText = url;
+
+    });
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>RAM Knowlodge Hub Portal</title>
+    <title>ERROR: Page Not Found</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            text-align: center;
+            padding: 60px;
+        }
+
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>⚠ Page Not Found (404)</h1>
+
+        <p>The page or file you requested does not exist.</p>
+
+        <p>This may happen if:</p>
+
+        <ul style="text-align:left">
+            <li>The link is incorrect</li>
+            <li>The document was moved</li>
+            <li>The file name changed</li>
+        </ul>
+
+        <br>
+
+        <a href="index.html">🏠 Return to Portal Home</a>
+
+    </div>
+
+</body>
+
+</html>
+<p>Requested URL:</p>
+<p id="errorUrl"></p>

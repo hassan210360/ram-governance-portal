@@ -1,76 +1,86 @@
+<!-- ====================================== -->
+<!-- RAM Knolowde Portal - Hassan El-Meligy -->
+<!-- Main Root Index     -->
+<!-- h.meligy@ieee.org                      -->
+<!-- ====================================== -->
 <!DOCTYPE html>
 <html>
-    <!-- Menu -->
-    <script> 
-        document.addEventListener("DOMContentLoaded", function(){
+<!-- Menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         fetch("components/menu.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("menu").innerHTML = data;
-        });
-        });
-    </script>
-    <!-- M -->
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("menu").innerHTML = data;
+            });
+    });
+</script>
+<!-- M -->
+
 <head>
-    <title>RAM Enterprise Knowledge Hub</title>
+    <meta charset="UTF-8">
+    <title>🏠 RAM Enterprise P&P Knowledge Hub</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/search.js"></script>
     <script src="js/auth.js"></script>
-<!--  -->
+    <!--  -->
 </head>
 <link rel="icon" type="image/x-icon" href="1.ico">
+
 <body>
-   <!-- PASSCODE MODAL -->
-<div id="authModal" class="modal">
-    <div class="modal-box">
-        <h2>RAM Governance Portal 260312-0215-1</h2>
-        <p>Please enter access code</p>
-        <input type="password" id="code" placeholder="Access code">
-        <button onclick="checkCode()">Enter</button>
-        <p id="error"></p>
+    <!-- PASSCODE MODAL -->
+    <div id="authModal" class="modal">
+        <div class="modal-box">
+            <h2>🏠 RAM Governance Portal 260312-0215-1</h2>
+            <p>Please enter access code</p>
+            <input type="password" id="code" placeholder="Access code">
+            <button onclick="checkCode()">Enter</button>
+            <p id="error"></p>
+        </div>
     </div>
-</div>
-<!-- END PASSCODE  -->
+    <!-- END PASSCODE  -->
 
-<header>
-<img src="assets/logo.png">
-<h2> RAM Policies & Procedures Knowledge Hub 260312-0215-2</h2>
-</header>
-<!-- Call the menu -->
- <div class="container"> 
-    <div id="menu"></div>
- 
-<!-- End call the menu -->
+    <header>
+        <img src="assets/logo.png">
+        <h2>🏠 RAM Policies & Procedures Knowledge Hub 260312-0215-2</h2>
+    </header>
+    <!-- Call the menu -->
+    <div class="container">
+        <div id="menu"></div>
 
-<main>
-    <h2>RAM Enterprise Knowledge Portal</h2>
-    <div class="diagram">
-        <h3>Enterprise Process Architecture</h3>
-        <svg width="600" height="200">
-            <rect x="10" y="20" width="150" height="40" fill="#0b5ea6"/>
-            <text x="20" y="45" fill="white">Governance</text>
-            <rect x="170" y="20" width="150" height="40" fill="#0b5ea6"/>
-            <text x="180" y="45" fill="white">Investment</text>
-            <rect x="330" y="20" width="150" height="40" fill="#0b5ea6"/>
-            <text x="340" y="45" fill="white">Operations</text>
-            <rect x="490" y="20" width="150" height="40" fill="#0b5ea6"/>
-            <text x="500" y="45" fill="white">Shared Services</text>
-        </svg>
+        <!-- End call the menu -->
+
+        <main>
+            <h2>🏠 RAM Enterprise Knowledge Portal</h2>
+            <div class="diagram">
+                <h3>Enterprise Process Architecture</h3>
+                <svg width="600" height="200">
+                    <rect x="10" y="20" width="150" height="50" fill="#0b5ea6" />
+                    <text x="20" y="50" fill="white">📜 Governance</text>
+                    <rect x="170" y="20" width="150" height="50" fill="#0b5ea6" />
+                    <text x="180" y="50" fill="white">📄 Investment</text>
+                    <rect x="330" y="20" width="150" height="50" fill="#0b5ea6" />
+                    <text x="340" y="50" fill="white">⚙ Operations</text>
+                    <rect x="490" y="20" width="300" height="50" fill="#0b5ea6" />
+                    <text x="500" y="50" fill="white">📑 Shared Services</text>
+                </svg>
+            </div>
+
+            <p>This portal provides a wiki-style knowledge hub for RAM policies and procedures including governance,
+                operational processes, shared services and compliance frameworks.</p>
+            <!-- <a href="ai_search.html">RAM AI Advanced Knowledge Search</a> -->
+            <!-- <a href="ai_search.html" class="ai-button">RAM AI Advanced Knowledge Search</a> -->
+
+            <a href="ai_search.html" class="ai-portal-button">
+                >> 🔍 RAM AI Advanced Knowledge Search
+            </a>
+
+        </main>
     </div>
 
-    <p>This portal provides a wiki-style knowledge hub for RAM policies and procedures including governance, operational processes, shared services and compliance frameworks.</p>
-    <!-- <a href="ai_search.html">RAM AI Advanced Knowledge Search</a> -->
-    <!-- <a href="ai_search.html" class="ai-button">RAM AI Advanced Knowledge Search</a> -->
-
-    <a href="ai_search.html" class="ai-portal-button">
-    >> RAM AI Advanced Knowledge Search
-    </a>
-
-    </main>
-</div>
-
-<footer>
-    <a href="index.html" style="color:white">Home</a>
-</footer>
+    <footer>
+        <a href="index.html" style="color:white">Home</a>
+    </footer>
 </body>
+
 </html>
