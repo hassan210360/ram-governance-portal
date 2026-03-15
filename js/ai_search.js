@@ -1,25 +1,25 @@
-async function searchPolicies() {
+async function searchPolicies(){
 
-    let q = document.getElementById("search").value.trim().toLowerCase();
+let q = document.getElementById("search").value.trim().toLowerCase();
 
-    let data = await fetch("data/search_index.json");
-    let index = await data.json();
+let data = await fetch("data/search_index.json");
+let index = await data.json();
 
-    let results = index.filter(d =>
-        (d.text && d.text.toLowerCase().includes(q)) ||
-        (d.title && d.title.toLowerCase().includes(q)) ||
-        (d.tags && d.tags.join(" ").toLowerCase().includes(q))
-    );
+let results = index.filter(d =>
+(d.text && d.text.toLowerCase().includes(q)) ||
+(d.title && d.title.toLowerCase().includes(q)) ||
+(d.tags && d.tags.join(" ").toLowerCase().includes(q))
+);
 
-    let html = "";
+let html="";
 
-    if (results.length === 0) {
-        html = "<p>No results found</p>";
-    }
+if(results.length===0){
+html="<p>No results found</p>";
+}
 
-    results.forEach(d => {
+results.forEach(d=>{
 
-        html += `
+html+=`
 <div class="result">
 
 <h3>${d.title}</h3>
@@ -33,8 +33,8 @@ async function searchPolicies() {
 </div>
 `
 
-    })
+})
 
-    document.getElementById("results").innerHTML = html;
+document.getElementById("results").innerHTML=html;
 
 }
