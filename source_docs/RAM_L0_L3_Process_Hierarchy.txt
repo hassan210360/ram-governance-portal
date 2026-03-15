@@ -1,0 +1,35 @@
+
+L0 – RAM ENTERPRISE PROCESS ARCHITECTURE
+
+1.0 Strategy & Governance
+2.0 Investment Lifecycle
+3.0 Asset Operations
+4.0 Performance & Controls
+5.0 Corporate & Support Functions
+
+L1 / L2 / L3 SAMPLE:
+
+2.0 Investment Lifecycle
+2.1 Opportunity Management
+2.1.1 Opportunity Logging
+2.1.2 Financial Screening
+2.1.3 Risk Pre-Screen
+2.1.4 AMC Pre-Clearance
+
+2.2 Acquisition & DD
+2.2.1 Financial Due Diligence
+2.2.2 Legal Due Diligence
+2.2.3 Technical Due Diligence
+2.2.4 Investment Memo Approval
+
+3.0 Asset Operations
+3.1 Leasing Lifecycle
+3.1.1 Tenant Lead
+3.1.2 Credit Assessment
+3.1.3 Contract Execution
+3.1.4 Billing & Collections
+
+3.2 Governed FM
+3.2.1 Preventive Maintenance
+3.2.2 Corrective Maintenance
+3.2.3 Vendor SLA Review

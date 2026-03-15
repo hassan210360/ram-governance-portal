@@ -1,0 +1,34 @@
+
+DATA DICTIONARY SAMPLE:
+
+ASSET_MASTER:
+- Asset_ID
+- Asset_Class
+- Location_Code
+- Cost_Center
+- Useful_Life
+- Acquisition_Value
+
+LEASE_MASTER:
+- Lease_ID
+- Tenant_ID
+- Contract_Start_Date
+- Rent_Value
+- Escalation_Rate
+
+WORK_ORDER:
+- WO_ID
+- Asset_ID
+- Priority_Level
+- SLA_Target
+- Completion_Date
+
+APPROVAL MATRIX SAMPLE:
+
+Opportunity Approval < 10M LE → CEO
+10M – 50M LE → AMC
+>50M LE → Board
+
+CapEx < 1M LE → Asset Manager
+1M – 5M LE → AMC
+>5M LE → Board
