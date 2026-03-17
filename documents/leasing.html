@@ -1,95 +1,153 @@
-
 <!DOCTYPE html>
 <html>
-     <!-- Menu -->
-    <script> 
-        document.addEventListener("DOMContentLoaded", function(){
+<!-- Menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         fetch("components/menu.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("menu").innerHTML = data;
-        });
-        });
-    </script>
-    <!-- M -->
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("menu").innerHTML = data;
+            });
+    });
+</script>
+<!-- M -->
+
 <head>
-<title>Leasing</title>
-<link rel="stylesheet" href="../css/style.css">
+    <title>Leasing</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<header>
-<img src="../assets/logo.png">
-<h2>Leasing</h2>
-</header>
+    <header>
+        <img src="../assets/logo.png">
+        <h2>Leasing</h2>
+    </header>
 
-<!-- <div class="container"> -->
-  <!-- Call the menu -->
- <div class="container"> 
-    <div id="menu"></div>
- <!-- End call the menu -->
-<main>
+    <!-- <div class="container"> -->
+    <!-- Call the menu -->
+    <div class="container">
+        <div id="menu"></div>
+        <!-- End call the menu -->
+        <main>
 
-<div class="section">
-<h2>Leasing</h2>
-    <a href="../index.html" title="Go back to the homepage" style="color:rgb(45, 4, 148)">HomePage</a>
-    <p><b>Open Policy Document:</b> <a href="../documents/pdf/03_Leasing.pdf" target="_blank" >Open PDF Version</a>
-    <b>Full Policy Document:</b> <a href="../documents/word/03_Leasing.docx">Download Word Version</a></p>
-<!-- <p><b>Full Policy Document:</b> <a href="../documents/word/03_Leasing.docx">Download Word Version</a></p> -->
-</div>
+            <div class="section">
+                <h2>Leasing</h2>
+                <a href="../index.html" title="Go back to the homepage" style="color:rgb(45, 4, 148)">HomePage</a>
+                <p><b>Open Policy Document:</b> <a href="../documents/pdf/03_Leasing.pdf" target="_blank">Open PDF
+                        Version</a>
+                    <b>Full Policy Document:</b> <a href="../documents/word/03_Leasing.docx">Download Word Version</a>
+                </p>
+                <!-- <bR> -->
+                <p><b>Open Work Instructions:</b> <a
+                        href="../documents/pdf/03_04_Overall Real Estate & Facility Management operations.pdf"
+                        target="_blank">Open PDF
+                        Version</a>
+                    <b>Full Policy Document:</b> <a
+                        href="../documents/word/03_04_Overall Real Estate & Facility Management operations.docx">Download
+                        Word Version</a>
+                </p>
 
-<div class="section">
-<h3>SIPOC</h3>
-<table>
-<tr><th>Supplier</th><th>Input</th><th>Process</th><th>Output</th><th>Customer</th></tr>
-<tr><td>Internal Teams</td><td>Operational Data</td><td>Leasing Process</td><td>Reports</td><td>Management</td></tr>
-</table>
-</div>
+                <!-- <p><b>Full Policy Document:</b> <a href="../documents/word/03_Leasing.docx">Download Word Version</a></p> -->
+            </div>
 
-<div class="section">
-<h3>BPMN Workflow</h3>
-<p>Process initiation → Review → Approval → Execution → Monitoring</p>
-</div>
+            <div class="section">
+                <h3>SIPOC</h3>
+                <table>
+                    <tr>
+                        <th>Supplier</th>
+                        <th>Input</th>
+                        <th>Process</th>
+                        <th>Output</th>
+                        <th>Customer</th>
+                    </tr>
+                    <tr>
+                        <td>Internal Teams</td>
+                        <td>Operational Data</td>
+                        <td>Leasing Process</td>
+                        <td>Reports</td>
+                        <td>Management</td>
+                    </tr>
+                </table>
+            </div>
 
-<div class="section">
-<h3>RACI Matrix</h3>
-<table>
-<tr><th>Activity</th><th>Responsible</th><th>Accountable</th><th>Consulted</th><th>Informed</th></tr>
-<tr><td>Main Process</td><td>Process Owner</td><td>Executive</td><td>Departments</td><td>Management</td></tr>
-</table>
-</div>
+            <div class="section">
+                <h3>BPMN Workflow</h3>
+                <p>Process initiation → Review → Approval → Execution → Monitoring</p>
+            </div>
 
-<div class="section">
-<h3>KPIs</h3>
-<table>
-<tr><th>KPI</th><th>Target</th></tr>
-<tr><td>Process Completion</td><td>100%</td></tr>
-<tr><td>Compliance Rate</td><td>>95%</td></tr>
-</table>
-</div>
+            <div class="section">
+                <h3>RACI Matrix</h3>
+                <table>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Responsible</th>
+                        <th>Accountable</th>
+                        <th>Consulted</th>
+                        <th>Informed</th>
+                    </tr>
+                    <tr>
+                        <td>Main Process</td>
+                        <td>Process Owner</td>
+                        <td>Executive</td>
+                        <td>Departments</td>
+                        <td>Management</td>
+                    </tr>
+                </table>
+            </div>
 
-<div class="section">
-<h3>Templates</h3>
-<p>See related templates in <a href="../forms/templates.html">Forms & Templates</a></p>
-</div>
+            <div class="section">
+                <h3>KPIs</h3>
+                <table>
+                    <tr>
+                        <th>KPI</th>
+                        <th>Target</th>
+                    </tr>
+                    <tr>
+                        <td>Process Completion</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>Compliance Rate</td>
+                        <td>>95%</td>
+                    </tr>
+                </table>
+            </div>
 
-<div class="section">
-<h3>Audit Checklist</h3>
-<table>
-<tr><th>Control</th><th>Status</th></tr>
-<tr><td>Policy Approved</td><td>✔</td></tr>
-<tr><td>Process Documented</td><td>✔</td></tr>
-<tr><td>Templates Available</td><td>✔</td></tr>
-</table>
-</div>
+            <div class="section">
+                <h3>Templates</h3>
+                <p>See related templates in <a href="../forms/templates.html">Forms & Templates</a></p>
+            </div>
 
-</main>
-</div>
+            <div class="section">
+                <h3>Audit Checklist</h3>
+                <table>
+                    <tr>
+                        <th>Control</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Policy Approved</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Process Documented</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Templates Available</td>
+                        <td>✔</td>
+                    </tr>
+                </table>
+            </div>
 
-<footer>
-<a href="../index.html" style="color:white">Back to Home</a>
-</footer>
+        </main>
+    </div>
+
+    <footer>
+        <a href="../index.html" style="color:white">Back to Home</a>
+    </footer>
 
 </body>
+
 </html>
