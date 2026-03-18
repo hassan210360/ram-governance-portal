@@ -1,97 +1,100 @@
 <!DOCTYPE html>
 <html>
 <!-- Menu -->
-    <script> 
-        document.addEventListener("DOMContentLoaded", function(){
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         fetch("components/menu.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("menu").innerHTML = data;
-        });
-        });
-    </script>
-    <!-- M -->
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("menu").innerHTML = data;
+            });
+    });
+</script>
+<!-- M -->
+
 <head>
-<title>Risk & Compliance Framework</title>
-<link rel="stylesheet" href="../css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Risk & Compliance Framework</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 
 <body>
 
-<header>
-<img src="../assets/logo.png">
-<h2>Risk & Compliance Framework</h2>
-</header>
+    <header>
+        <img src="../assets/logo.png">
+        <h2>Risk & Compliance Framework</h2>
+    </header>
 
-<!-- <div class="container"> -->
-  <!-- Call the menu -->
- <div class="container"> 
-    <div id="menu"></div>
- <!-- End call the menu -->
+    <!-- <div class="container"> -->
+    <!-- Call the menu -->
+    <div class="container">
+        <div id="menu"></div>
+        <!-- End call the menu -->
 
-<div class="content">
+        <div class="content">
 
-<h1>07 Risk & Compliance Framework</h1>
+            <h1>07 Risk & Compliance Framework</h1>
 
-<h2>Level 1 – Policy</h2>
+            <h2>Level 1 – Policy</h2>
 
-<p class="policy-text">
-The Risk & Compliance framework establishes the principles for identifying,
-assessing, monitoring, and mitigating organizational risks while ensuring
-compliance with legal, regulatory, and internal governance requirements.
-</p>
+            <p class="policy-text">
+                The Risk & Compliance framework establishes the principles for identifying,
+                assessing, monitoring, and mitigating organizational risks while ensuring
+                compliance with legal, regulatory, and internal governance requirements.
+            </p>
 
-<p class="policy-text">
-All departments must maintain risk registers and periodically review
-compliance obligations relevant to their operations.
-</p>
+            <p class="policy-text">
+                All departments must maintain risk registers and periodically review
+                compliance obligations relevant to their operations.
+            </p>
 
-<h2>Level 2 – Procedures</h2>
+            <h2>Level 2 – Procedures</h2>
 
-<ul>
-<li>Risk Identification</li>
-<li>Risk Assessment & Scoring</li>
-<li>Risk Mitigation Planning</li>
-<li>Compliance Monitoring</li>
-<li>Risk Reporting to Management</li>
-</ul>
+            <ul>
+                <li>Risk Identification</li>
+                <li>Risk Assessment & Scoring</li>
+                <li>Risk Mitigation Planning</li>
+                <li>Compliance Monitoring</li>
+                <li>Risk Reporting to Management</li>
+            </ul>
 
-<h2>Level 3 – Work Instructions</h2>
+            <h2>Level 3 – Work Instructions</h2>
 
-<ol>
-<li>Identify operational and strategic risks</li>
-<li>Document risks in the risk register</li>
-<li>Assess probability and impact</li>
-<li>Define mitigation controls</li>
-<li>Monitor risk status quarterly</li>
-</ol>
+            <ol>
+                <li>Identify operational and strategic risks</li>
+                <li>Document risks in the risk register</li>
+                <li>Assess probability and impact</li>
+                <li>Define mitigation controls</li>
+                <li>Monitor risk status quarterly</li>
+            </ol>
 
-<h2>Level 4 – Forms & Templates</h2>
+            <h2>Level 4 – Forms & Templates</h2>
 
-<ul>
-<li><a href="../templates/risk_register.xlsx">Risk Register</a></li>
-<li><a href="../templates/compliance_checklist.xlsx">Compliance Checklist</a></li>
-<li><a href="../templates/incident_report.xlsx">Incident Report Form</a></li>
-</ul>
+            <ul>
+                <li><a href="../templates/risk_register.xlsx">Risk Register</a></li>
+                <li><a href="../templates/compliance_checklist.xlsx">Compliance Checklist</a></li>
+                <li><a href="../templates/incident_report.xlsx">Incident Report Form</a></li>
+            </ul>
 
-<h2>Process Flow</h2>
+            <h2>Process Flow</h2>
 
-<div class="mermaid">
-graph TD
-A[Identify Risk] --> B[Assess Risk]
-B --> C[Define Mitigation]
-C --> D[Monitor Risk]
-D --> E[Report to Management]
-</div>
+            <div class="mermaid">
+                graph TD
+                A[Identify Risk] --> B[Assess Risk]
+                B --> C[Define Mitigation]
+                C --> D[Monitor Risk]
+                D --> E[Report to Management]
+            </div>
 
-<br>
+            <br>
 
-<a href="pdf/07_Risk_Compliance.pdf">Open Full Policy Document</a>
+            <a href="pdf/07_Risk_Compliance.pdf">Open Full Policy Document</a>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </body>
+
 </html>

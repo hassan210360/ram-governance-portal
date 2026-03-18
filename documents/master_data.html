@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <!-- Menu -->
-    <script> 
-        document.addEventListener("DOMContentLoaded", function(){
+<!-- Menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         fetch("components/menu.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("menu").innerHTML = data;
-        });
-        });
-    </script>
-    <!-- M -->
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("menu").innerHTML = data;
+            });
+    });
+</script>
+<!-- M -->
 
 <head>
-<title>Master Data Governance</title>
-<link rel="stylesheet" href="../css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Master Data Governance</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 
 <body>
 
-<header>
-<img src="../assets/logo.png">
-<h2>Master Data Governance</h2>
-</header>
+    <header>
+        <img src="../assets/logo.png">
+        <h2>Master Data Governance</h2>
+    </header>
 
 
-<!-- <div class="container"> -->
-  <!-- Call the menu -->
- <div class="container"> 
-    <div id="menu"></div>
- <!-- End call the menu -->
+    <!-- <div class="container"> -->
+    <!-- Call the menu -->
+    <div class="container">
+        <div id="menu"></div>
+        <!-- End call the menu -->
 
-<div class="content">
+        <div class="content">
 
-<h1>08 Master Data Governance</h1>
+            <h1>08 Master Data Governance</h1>
 
-<h2>Level 1 - Policy</h2>
+            <h2>Level 1 - Policy</h2>
 
-<p class="policy-text">
-Master Data Governance ensures the accuracy, consistency, and integrity of
-core organizational data across all systems and business processes.
-</p>
+            <p class="policy-text">
+                Master Data Governance ensures the accuracy, consistency, and integrity of
+                core organizational data across all systems and business processes.
+            </p>
 
-<p class="policy-text">
-All master data must be centrally managed and maintained in accordance with
-data governance standards.
-</p>
+            <p class="policy-text">
+                All master data must be centrally managed and maintained in accordance with
+                data governance standards.
+            </p>
 
-<h2>Level 2 - Procedures</h2>
+            <h2>Level 2 - Procedures</h2>
 
-<ul>
-<li>Data Creation & Registration</li>
-<li>Data Validation & Approval</li>
-<li>Data Maintenance & Updates</li>
-<li>Data Quality Monitoring</li>
-<li>Data Access Control</li>
-</ul>
+            <ul>
+                <li>Data Creation & Registration</li>
+                <li>Data Validation & Approval</li>
+                <li>Data Maintenance & Updates</li>
+                <li>Data Quality Monitoring</li>
+                <li>Data Access Control</li>
+            </ul>
 
-<h2>Level 3 - Work Instructions</h2>
+            <h2>Level 3 - Work Instructions</h2>
 
-<ol>
-<li>Submit master data request</li>
-<li>Validate data fields</li>
-<li>Approve creation request</li>
-<li>Register data in system</li>
-<li>Perform periodic quality review</li>
-</ol>
+            <ol>
+                <li>Submit master data request</li>
+                <li>Validate data fields</li>
+                <li>Approve creation request</li>
+                <li>Register data in system</li>
+                <li>Perform periodic quality review</li>
+            </ol>
 
-<h2>Level 4 - Forms & Templates</h2>
+            <h2>Level 4 - Forms & Templates</h2>
 
-<ul>
-<li><a href="../templates/master_data_request.xlsx">Master Data Request Form</a></li>
-<li><a href="../templates/data_quality_audit.xlsx">Data Quality Audit Checklist</a></li>
-</ul>
+            <ul>
+                <li><a href="../templates/master_data_request.xlsx">Master Data Request Form</a></li>
+                <li><a href="../templates/data_quality_audit.xlsx">Data Quality Audit Checklist</a></li>
+            </ul>
 
-<h2>Process Flow</h2>
+            <h2>Process Flow</h2>
 
-<div class="mermaid">
-graph TD
-A[Submit Data Request] --> B[Data Validation]
-B --> C[Approval]
-C --> D[Data Registration]
-D --> E[Data Quality Monitoring]
-</div>
+            <div class="mermaid">
+                graph TD
+                A[Submit Data Request] --> B[Data Validation]
+                B --> C[Approval]
+                C --> D[Data Registration]
+                D --> E[Data Quality Monitoring]
+            </div>
 
-<br>
+            <br>
 
-<a href="pdf/08_Master_Data.pdf">Open Full Policy Document</a>
+            <a href="pdf/08_Master_Data.pdf">Open Full Policy Document</a>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </body>
+
 </html>

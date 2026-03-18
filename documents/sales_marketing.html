@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html>
 <!-- Menu -->
-    <script> 
-        document.addEventListener("DOMContentLoaded", function(){
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         fetch("components/menu.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("menu").innerHTML = data;
-        });
-        });
-    </script>
-    <!-- M -->
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("menu").innerHTML = data;
+            });
+    });
+</script>
+<!-- M -->
+
 <head>
-<title>Sales & Marketing Commercialization</title>
-<link rel="stylesheet" href="../css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Sales & Marketing Commercialization</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 
 <body>
 
-<header>
-<img src="../assets/logo.png">
-<h2>Sales & Marketing Commercialization</h2>
-</header>
+    <header>
+        <img src="../assets/logo.png">
+        <h2>Sales & Marketing Commercialization</h2>
+    </header>
 
-<div class="container">
+    <div class="container">
 
-<  <!-- Call the menu -->
- <div class="container"> 
-    <div id="menu"></div>
- 
-<!-- End call the menu -->
+        < <!-- Call the menu -->
+            <div class="container">
+                <div id="menu"></div>
 
-<div class="content">
+                <!-- End call the menu -->
 
-<h1>16 Sales & Marketing Commercialization</h1>
+                <div class="content">
 
-<h2>Level 1 - Policy</h2>
+                    <h1>16 Sales & Marketing Commercialization</h1>
 
-<p class="policy-text">
-The Sales & Marketing function defines the organization's market positioning,
-customer acquisition strategy, and commercial revenue generation framework.
-</p>
+                    <h2>Level 1 - Policy</h2>
 
-<p class="policy-text">
-All marketing campaigns must align with the corporate strategy and brand
-governance policies.
-</p>
+                    <p class="policy-text">
+                        The Sales & Marketing function defines the organization's market positioning,
+                        customer acquisition strategy, and commercial revenue generation framework.
+                    </p>
 
-<h2>Level 2 - Procedures</h2>
+                    <p class="policy-text">
+                        All marketing campaigns must align with the corporate strategy and brand
+                        governance policies.
+                    </p>
 
-<ul>
-<li>Commercial Strategy Planning</li>
-<li>Marketing Campaign Management</li>
-<li>Sales Pipeline Management</li>
-<li>Contract Negotiation</li>
-<li>Revenue Monitoring</li>
-</ul>
+                    <h2>Level 2 - Procedures</h2>
 
-<h2>Level 3 - Work Instructions</h2>
+                    <ul>
+                        <li>Commercial Strategy Planning</li>
+                        <li>Marketing Campaign Management</li>
+                        <li>Sales Pipeline Management</li>
+                        <li>Contract Negotiation</li>
+                        <li>Revenue Monitoring</li>
+                    </ul>
 
-<ol>
-<li>Capture leads in CRM</li>
-<li>Perform lead qualification</li>
-<li>Create opportunity pipeline</li>
-<li>Prepare commercial proposal</li>
-<li>Negotiate and sign contract</li>
-</ol>
+                    <h2>Level 3 - Work Instructions</h2>
 
-<h2>Level 4 - Forms & Templates</h2>
+                    <ol>
+                        <li>Capture leads in CRM</li>
+                        <li>Perform lead qualification</li>
+                        <li>Create opportunity pipeline</li>
+                        <li>Prepare commercial proposal</li>
+                        <li>Negotiate and sign contract</li>
+                    </ol>
 
-<ul>
-<li><a href="../templates/sales_pipeline.xlsx">Sales Pipeline Tracker</a></li>
-<li><a href="../templates/marketing_campaign.xlsx">Marketing Campaign Tracker</a></li>
-<li><a href="../templates/customer_nps.xlsx">Customer NPS Survey</a></li>
-</ul>
+                    <h2>Level 4 - Forms & Templates</h2>
 
-<h2>Process Flow</h2>
+                    <ul>
+                        <li><a href="../templates/sales_pipeline.xlsx">Sales Pipeline Tracker</a></li>
+                        <li><a href="../templates/marketing_campaign.xlsx">Marketing Campaign Tracker</a></li>
+                        <li><a href="../templates/customer_nps.xlsx">Customer NPS Survey</a></li>
+                    </ul>
 
-<div class="mermaid">
-graph TD
-A[Lead Generation] --> B[Lead Qualification]
-B --> C[Opportunity Creation]
-C --> D[Proposal Development]
-D --> E[Contract Signing]
-</div>
+                    <h2>Process Flow</h2>
 
-<br>
+                    <div class="mermaid">
+                        graph TD
+                        A[Lead Generation] --> B[Lead Qualification]
+                        B --> C[Opportunity Creation]
+                        C --> D[Proposal Development]
+                        D --> E[Contract Signing]
+                    </div>
 
-<a href="pdf/16_Sales_Marketing_Commercialization.pdf">Open Full Policy PDF</a>
+                    <br>
 
-</div>
+                    <a href="pdf/16_Sales_Marketing_Commercialization.pdf">Open Full Policy PDF</a>
 
-</div>
+                </div>
+
+            </div>
 
 </body>
+
 </html>

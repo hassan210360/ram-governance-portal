@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RAM Operations Manual</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header {
+            background: #1f3c88;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #f4f4f4;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            margin: 8px;
+            text-decoration: none;
+            color: #1f3c88;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2 {
+            color: #1f3c88;
+        }
+
+        .forms a {
+            display: block;
+            margin: 5px 0;
+            color: #0066cc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .form-box {
+            background: #fafafa;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>RAM MASTER OPERATIONS DOCUMENT</h1>
+    </header>
+
+    <nav>
+        <a href="#p1">Acquisition</a>
+        <a href="#p2">Leasing</a>
+        <a href="#p3">Onboarding</a>
+        <a href="#p4">Finance</a>
+        <a href="#p5">Maintenance</a>
+        <a href="#p6">Planned Maintenance</a>
+        <a href="#p7">Vendor</a>
+        <a href="#p8">Exit</a>
+        <a href="#forms">Forms Library</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- PROCESS 1 -->
+        <section id="p1">
+            <h2>1. Asset Acquisition Management</h2>
+            <p><b>Description:</b> Acquisition of real estate assets.</p>
+
+            <h3>Required Forms</h3>
+            <div class="forms">
+                <a href="#f-investment-memo">Investment Memo</a>
+                <a href="#f-dd">Due Diligence Checklist</a>
+                <a href="#f-approval">IC Approval</a>
+            </div>
+        </section>
+
+        <!-- PROCESS 2 -->
+        <section id="p2">
+            <h2>2. Leasing Management</h2>
+
+            <h3>Required Forms</h3>
+            <div class="forms">
+                <a href="#f-tenant-app">Tenant Application</a>
+                <a href="#f-lease">Lease Agreement</a>
+                <a href="#f-screening">Screening Checklist</a>
+            </div>
+        </section>
+
+        <!-- PROCESS 3 -->
+        <section id="p3">
+            <h2>3. Tenant Onboarding</h2>
+
+            <div class="forms">
+                <a href="#f-tenant-info">Tenant Info</a>
+                <a href="#f-handover">Handover Report</a>
+                <a href="#f-keys">Key Handover</a>
+            </div>
+        </section>
+
+        <!-- PROCESS 4 -->
+        <section id="p4">
+            <h2>4. Finance</h2>
+
+            <div class="forms">
+                <a href="#f-invoice">Invoice</a>
+                <a href="#f-receipt">Receipt</a>
+                <a href="#f-aging">Aging Report</a>
+            </div>
+        </section>
+
+        <!-- PROCESS 5 -->
+        <section id="p5">
+            <h2>5. Maintenance</h2>
+
+            <div class="forms">
+                <a href="#f-maintenance">Maintenance Request</a>
+                <a href="#f-workorder">Work Order</a>
+            </div>
+        </section>
+
+        <!-- PROCESS 6 -->
+        <section id="p6">
+            <h2>6. Planned Maintenance</h2>
+
+            <div class="forms">
+                <a href="#f-pm">PM Schedule</a>
+                <a href="#f-asset">Asset Register</a>
+            </div>
+        </section>
+
+        <!-- PROCESS 7 -->
+        <section id="p7">
+            <h2>7. Vendor Management</h2>
+
+            <div class="forms">
+                <a href="#f-vendor">Vendor Registration</a>
+                <a href="#f-sla">SLA</a>
+            </div>
+        </section>
+
+        <!-- PROCESS 8 -->
+        <section id="p8">
+            <h2>8. Tenant Exit</h2>
+
+            <div class="forms">
+                <a href="#f-exit">Exit Inspection</a>
+                <a href="#f-deposit">Deposit Settlement</a>
+            </div>
+        </section>
+
+        <!-- ================= FORMS SECTION ================= -->
+
+        <section id="forms">
+            <h2>📄 Forms Library</h2>
+
+            <!-- INVESTMENT MEMO -->
+            <div id="f-investment-memo" class="form-box">
+                <h3>Investment Memo</h3>
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Project Name</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>IRR</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>NPV</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Recommendation</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p><b>Use:</b> Required before IC approval (SAP RE-FX attachment)</p>
+            </div>
+
+            <!-- TENANT APPLICATION -->
+            <div id="f-tenant-app" class="form-box">
+                <h3>Tenant Application</h3>
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Name</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Income</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p><b>Use:</b> Creates tenant master in SAP</p>
+            </div>
+
+            <!-- LEASE -->
+            <div id="f-lease" class="form-box">
+                <h3>Lease Agreement</h3>
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Tenant</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Rent</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p><b>Use:</b> Stored in SAP RE-FX</p>
+            </div>
+
+            <!-- INVOICE -->
+            <div id="f-invoice" class="form-box">
+                <h3>Invoice</h3>
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Tenant</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Amount</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Due Date</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p><b>Use:</b> Generated in SAP FI-AR</p>
+            </div>
+
+            <!-- MAINTENANCE -->
+            <div id="f-maintenance" class="form-box">
+                <h3>Maintenance Request</h3>
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Issue</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Priority</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p><b>Use:</b> Creates notification in SAP PM</p>
+            </div>
+
+            <!-- WORK ORDER -->
+            <div id="f-workorder" class="form-box">
+                <h3>Work Order</h3>
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Task</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- EXIT -->
+            <div id="f-exit" class="form-box">
+                <h3>Exit Inspection</h3>
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Condition</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Damage</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- DEPOSIT -->
+            <div id="f-deposit" class="form-box">
+                <h3>Deposit Settlement</h3>
+                <table border="1" width="100%">
+                    <tr>
+                        <td>Deposit</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Deductions</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Refund</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

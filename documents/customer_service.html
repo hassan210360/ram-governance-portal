@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html>
-     <!-- Menu -->
-    <script> 
-        document.addEventListener("DOMContentLoaded", function(){
+<!-- Menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         fetch("components/menu.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("menu").innerHTML = data;
-        });
-        });
-    </script>
-    <!-- M -->
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("menu").innerHTML = data;
+            });
+    });
+</script>
+<!-- M -->
 
 <head>
-<title>Tenant & Customer Service</title>
-<link rel="stylesheet" href="../css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Tenant & Customer Service</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 
 <body>
 
-<header>
-<img src="../assets/logo.png">
-<h2>Tenant & Customer Service</h2>
-</header>
+    <header>
+        <img src="../assets/logo.png">
+        <h2>Tenant & Customer Service</h2>
+    </header>
 
 
-<!-- <div class="container"> -->
-  <!-- Call the menu -->
- <div class="container"> 
-    <div id="menu"></div>
- <!-- End call the menu -->
+    <!-- <div class="container"> -->
+    <!-- Call the menu -->
+    <div class="container">
+        <div id="menu"></div>
+        <!-- End call the menu -->
 
-<div class="content">
+        <div class="content">
 
-<h1>17 Tenant & Customer Service Framework</h1>
+            <h1>17 Tenant & Customer Service Framework</h1>
 
-<h2>Level 1 - Policy</h2>
+            <h2>Level 1 - Policy</h2>
 
-<p class="policy-text">
-The Tenant & Customer Service framework ensures high-quality tenant engagement,
-rapid issue resolution, and continuous improvement in customer satisfaction.
-</p>
+            <p class="policy-text">
+                The Tenant & Customer Service framework ensures high-quality tenant engagement,
+                rapid issue resolution, and continuous improvement in customer satisfaction.
+            </p>
 
-<p class="policy-text">
-Customer complaints must be acknowledged within 24 hours and resolved within
-service level agreements defined by management.
-</p>
+            <p class="policy-text">
+                Customer complaints must be acknowledged within 24 hours and resolved within
+                service level agreements defined by management.
+            </p>
 
-<h2>Level 2 - Procedures</h2>
+            <h2>Level 2 - Procedures</h2>
 
-<ul>
-<li>Tenant Onboarding</li>
-<li>Customer Complaint Management</li>
-<li>Service Request Handling</li>
-<li>Customer Satisfaction Monitoring</li>
-</ul>
+            <ul>
+                <li>Tenant Onboarding</li>
+                <li>Customer Complaint Management</li>
+                <li>Service Request Handling</li>
+                <li>Customer Satisfaction Monitoring</li>
+            </ul>
 
-<h2>Level 3 - Work Instructions</h2>
+            <h2>Level 3 - Work Instructions</h2>
 
-<ol>
-<li>Receive tenant inquiry</li>
-<li>Register ticket in CRM</li>
-<li>Assign service team</li>
-<li>Resolve issue</li>
-<li>Confirm resolution with tenant</li>
-</ol>
+            <ol>
+                <li>Receive tenant inquiry</li>
+                <li>Register ticket in CRM</li>
+                <li>Assign service team</li>
+                <li>Resolve issue</li>
+                <li>Confirm resolution with tenant</li>
+            </ol>
 
-<h2>Level 4 - Forms & Templates</h2>
+            <h2>Level 4 - Forms & Templates</h2>
 
-<ul>
-<li><a href="../templates/customer_complaint_form.xlsx">Customer Complaint Form</a></li>
-<li><a href="../templates/service_request_form.xlsx">Service Request Form</a></li>
-<li><a href="../templates/customer_feedback.xlsx">Customer Satisfaction Survey</a></li>
-</ul>
+            <ul>
+                <li><a href="../templates/customer_complaint_form.xlsx">Customer Complaint Form</a></li>
+                <li><a href="../templates/service_request_form.xlsx">Service Request Form</a></li>
+                <li><a href="../templates/customer_feedback.xlsx">Customer Satisfaction Survey</a></li>
+            </ul>
 
-<h2>Process Flow</h2>
+            <h2>Process Flow</h2>
 
-<div class="mermaid">
-graph TD
-A[Customer Request] --> B[Ticket Creation]
-B --> C[Assign Service Team]
-C --> D[Issue Resolution]
-D --> E[Customer Confirmation]
-</div>
+            <div class="mermaid">
+                graph TD
+                A[Customer Request] --> B[Ticket Creation]
+                B --> C[Assign Service Team]
+                C --> D[Issue Resolution]
+                D --> E[Customer Confirmation]
+            </div>
 
-<br>
+            <br>
 
-<a href="pdf/17_Tenant_Customer_Service Framework.pdf">Open Full Policy PDF</a>
+            <a href="pdf/17_Tenant_Customer_Service Framework.pdf">Open Full Policy PDF</a>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </body>
+
 </html>

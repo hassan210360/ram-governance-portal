@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html>
 <!-- Menu -->
-    <script> 
-        document.addEventListener("DOMContentLoaded", function(){
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         fetch("components/menu.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("menu").innerHTML = data;
-        });
-        });
-    </script>
-    <!-- M -->
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("menu").innerHTML = data;
+            });
+    });
+</script>
+<!-- M -->
+
 <head>
-<title>AI Knowledge Hub</title>
-<link rel="stylesheet" href="../css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <meta charset="UTF-8">
+    <title>AI Knowledge Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 
 <body>
 
-<header>
-<img src="../assets/logo.png">
-<h2>AI Knowledge Hub</h2>
-</header>
+    <header>
+        <img src="../assets/logo.png">
+        <h2>AI Knowledge Hub</h2>
+    </header>
 
-<div class="container">
+    <div class="container">
 
-  <!-- Call the menu -->
- <div class="container"> 
-    <div id="menu"></div>
- 
-<!-- End call the menu -->
+        <!-- Call the menu -->
+        <div class="container">
+            <div id="menu"></div>
 
-</div>
+            <!-- End call the menu -->
 
-<div class="content">
+        </div>
 
-<h1>09 AI Knowledge Hub</h1>
+        <div class="content">
 
-<h2>Level 1 – Policy</h2>
+            <h1>09 AI Knowledge Hub</h1>
 
-<p class="policy-text">
-The AI Knowledge Hub promotes the responsible adoption of artificial
-intelligence technologies across the organization while ensuring alignment
-with governance, ethical standards, and operational efficiency.
-</p>
+            <h2>Level 1 – Policy</h2>
 
-<p class="policy-text">
-All AI tools used by the organization must comply with internal governance
-policies related to data security, transparency, and responsible usage.
-</p>
+            <p class="policy-text">
+                The AI Knowledge Hub promotes the responsible adoption of artificial
+                intelligence technologies across the organization while ensuring alignment
+                with governance, ethical standards, and operational efficiency.
+            </p>
 
-<h2>Level 2 – Procedures</h2>
+            <p class="policy-text">
+                All AI tools used by the organization must comply with internal governance
+                policies related to data security, transparency, and responsible usage.
+            </p>
 
-<ul>
-<li>AI Tool Evaluation</li>
-<li>AI Use Case Approval</li>
-<li>AI Governance Review</li>
-<li>Knowledge Sharing</li>
-<li>AI Training & Capacity Building</li>
-</ul>
+            <h2>Level 2 – Procedures</h2>
 
-<h2>Level 3 – Work Instructions</h2>
+            <ul>
+                <li>AI Tool Evaluation</li>
+                <li>AI Use Case Approval</li>
+                <li>AI Governance Review</li>
+                <li>Knowledge Sharing</li>
+                <li>AI Training & Capacity Building</li>
+            </ul>
 
-<ol>
-<li>Identify potential AI use case</li>
-<li>Evaluate feasibility and risk</li>
-<li>Submit AI proposal for approval</li>
-<li>Deploy AI solution</li>
-<li>Monitor outcomes and performance</li>
-</ol>
+            <h2>Level 3 – Work Instructions</h2>
 
-<h2>Level 4 – Forms & Templates</h2>
+            <ol>
+                <li>Identify potential AI use case</li>
+                <li>Evaluate feasibility and risk</li>
+                <li>Submit AI proposal for approval</li>
+                <li>Deploy AI solution</li>
+                <li>Monitor outcomes and performance</li>
+            </ol>
 
-<ul>
-<li><a href="../templates/ai_use_case_proposal.xlsx">AI Use Case Proposal</a></li>
-<li><a href="../templates/ai_risk_assessment.xlsx">AI Risk Assessment</a></li>
-</ul>
+            <h2>Level 4 – Forms & Templates</h2>
 
-<h2>Process Flow</h2>
+            <ul>
+                <li><a href="../templates/ai_use_case_proposal.xlsx">AI Use Case Proposal</a></li>
+                <li><a href="../templates/ai_risk_assessment.xlsx">AI Risk Assessment</a></li>
+            </ul>
 
-<div class="mermaid">
-graph TD
-A[Identify AI Opportunity] --> B[Evaluate Use Case]
-B --> C[Approval]
-C --> D[Deploy AI Tool]
-D --> E[Monitor Performance]
-</div>
+            <h2>Process Flow</h2>
 
-<br>
+            <div class="mermaid">
+                graph TD
+                A[Identify AI Opportunity] --> B[Evaluate Use Case]
+                B --> C[Approval]
+                C --> D[Deploy AI Tool]
+                D --> E[Monitor Performance]
+            </div>
 
-<a href="pdf/09_AI_Knowledge_Hub.pdf">Open Full Policy Document</a>
+            <br>
 
-</div>
+            <a href="pdf/09_AI_Knowledge_Hub.pdf">Open Full Policy Document</a>
 
-</div>
+        </div>
+
+    </div>
 
 </body>
+
 </html>
